@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web App & App Development | COL Games</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            surface: "#0b1326",
+            "on-surface": "#dae2fd",
+            "on-surface-variant": "#c7c4d8",
+            primary: "#c0c1ff",
+            "primary-fixed": "#e1e0ff",
+            "primary-fixed-dim": "#c0c1ff",
+            "primary-container": "#4b4dd8",
+            secondary: "#4cd7f6",
+            "on-secondary": "#003640",
+            "on-secondary-fixed": "#001f26",
+            "secondary-container": "#03b5d3",
+            tertiary: "#ddb8ff",
+            "surface-container": "#171f33",
+            "surface-container-low": "#131b2e",
+            "surface-container-high": "#222a3d",
+            "surface-container-highest": "#2d3449",
+            "outline-variant": "#464555",
+            "on-primary": "#1000a9",
+            "on-primary-container": "#d9d8ff",
+            "background": "#0b1326",
+            "surface-bright": "#31394d"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-primary-fixed overflow-x-hidden">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-vignette"></div>
+  <nav class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-xl shadow-2xl shadow-slate-950/50">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="flex items-center gap-4">
+        <a aria-label="Go back to landing page" class="group flex items-center justify-center w-10 h-10 rounded-full bg-surface-container/60 backdrop-blur-md border border-outline-variant/30 text-on-surface hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 shadow-lg shadow-black/20 shrink-0" href="index.html">
+          <span class="material-symbols-outlined transition-transform group-hover:-translate-x-1">arrow_back</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter text-indigo-100 font-headline">COL Games</div>
+      </div>
+      <div class="hidden md:flex items-center space-x-8 font-manrope tracking-tight font-medium">
+        <a class="text-indigo-200 font-semibold border-b-2 border-cyan-400 pb-1" href="index.html#services">Services</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="portfolio.html" data-static-i18n="portfolio" data-no-auto-translate>Portfolio</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="privacy-policy.html" data-static-i18n="about" data-no-auto-translate>About</a>
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="text-slate-400 hover:text-indigo-200 transition-colors font-manrope tracking-tight font-medium cursor-pointer">EN</span>
+        <a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-md font-semibold hover:brightness-125 transition-all duration-300 scale-95 md:scale-100" href="index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-24">
+    <section class="relative min-h-[819px] flex items-center px-8 max-w-7xl mx-auto overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-container/20 blur-[120px] rounded-full"></div>
+      <div class="absolute top-1/2 -left-24 w-64 h-64 bg-primary-container/10 blur-[100px] rounded-full"></div>
+      <div class="relative z-10 w-full md:w-2/3 reveal reveal-left">
+        <span class="text-secondary font-label text-xs uppercase tracking-[0.2em] mb-4 block">Engineering Excellence</span>
+        <h1 class="text-7xl font-headline font-extrabold tracking-tighter leading-[0.9] mb-8 text-indigo-100">
+          Crafting <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary-container">Mobile &amp; Web Ecosystems</span>
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed font-light mb-10">
+          We architect digital experiences that transcend boundaries. From high-performance cloud infrastructures to fluid cross-platform interfaces, our development process is a fusion of structural integrity and aesthetic precision.
+        </p>
+        <div class="flex gap-4">
+          <a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-md font-bold text-sm tracking-wide shadow-xl shadow-primary/20 hover:brightness-110 transition-all" href="index.html#contact">Initiate Project</a>
+          <a class="border border-outline-variant/30 text-secondary px-8 py-4 rounded-md font-bold text-sm tracking-wide hover:bg-secondary/5 transition-all" href="ai-automation-detail.html">View Ecosystems <span class="material-symbols-outlined">arrow_downward</span></a>
+        </div>
+      </div>
+      <div class="lg:col-span-4 relative hidden lg:block">
+        <div class="reveal reveal-up stagger-3 aspect-square bg-surface-container-high rounded-full p-8 border border-outline-variant/10 relative">
+          <div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-full blur-2xl"></div>
+          <img alt="Development Interface" class="w-full h-full object-cover rounded-full mix-blend-lighten opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTLvUEcPNQLuw93h6EZzubzcnMFWVuUo_RrrFWeKLLNl8fcFT7tN3nhsBHpn2GZJ4og8X4JNmk60IEbtuU26fIfp77iCD_SgUvwYuCGLkti9mH0pR7Oi-73PQLxyJD6u4lbapXeQgj7oANOoSqcKx1cjduLIAkaa8y-fvCO2MTKVcTtTLExQM09TPzCNoyU2DKx8jmMFvyCO5OX6sFONnHp1St_XHvjEir4GNyRmCFHXtBs4U0nDSzF4gvNrDygZcaG-3NOoF6gkfb" />
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8 bg-surface-container-low overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="reveal reveal-up group">
+            <div class="w-16 h-16 bg-surface-container-highest rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors duration-500">
+              <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">architecture</span>
+            </div>
+            <h3 class="reveal reveal-left text-2xl font-headline font-bold text-on-surface mb-4">Robust Architecture</h3>
+            <p class="reveal reveal-right text-on-surface-variant leading-relaxed">Foundational blueprints built for the future. We deploy microservices and headless structures that ensure your digital backbone is as resilient as it is flexible.</p>
+          </div>
+          <div class="reveal reveal-up stagger-1 group">
+            <div class="w-16 h-16 bg-surface-container-highest rounded-xl flex items-center justify-center mb-8 group-hover:bg-secondary transition-colors duration-500">
+              <span class="material-symbols-outlined text-secondary group-hover:text-on-secondary text-3xl">unfold_more</span>
+            </div>
+            <h3 class="reveal reveal-left text-2xl font-headline font-bold text-on-surface mb-4">Limitless Scalability</h3>
+            <p class="reveal reveal-right text-on-surface-variant leading-relaxed">Engineered to grow with your ambition. Our cloud-native solutions utilize auto-scaling and serverless technologies to handle millions of concurrent interactions.</p>
+          </div>
+          <div class="reveal reveal-up stagger-2 group">
+            <div class="w-16 h-16 bg-surface-container-highest rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors duration-500">
+              <span class="material-symbols-outlined text-primary-container group-hover:text-on-primary-container text-3xl">devices</span>
+            </div>
+            <h3 class="reveal reveal-left text-2xl font-headline font-bold text-on-surface mb-4">Cross-Platform Fluidity</h3>
+            <p class="reveal reveal-right text-on-surface-variant leading-relaxed">Consistent experiences across every screen. Leveraging Flutter and React Native, we deliver native-performance apps from a single unified codebase.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+          <div class="max-w-2xl">
+            <span class="reveal reveal-up text-xs font-label tracking-[0.2em] text-secondary uppercase font-bold mb-4 block">Selected Works</span>
+            <h2 class="reveal reveal-left stagger-1 text-4xl md:text-5xl font-headline font-bold text-on-surface tracking-tight">Recent Deployments</h2>
+          </div>
+          <a class="reveal reveal-up stagger-2 text-primary font-bold flex items-center gap-2 group" href="privacy-policy.html">Explore Archive <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div class="reveal reveal-up group relative bg-surface-container rounded-xl p-6 border border-outline-variant/15 hover:border-primary/40 transition-all duration-500 hover:-translate-y-2">
+            <div class="aspect-[4/5] rounded-lg overflow-hidden mb-8 relative">
+              <img alt="Fintech App Design" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClF3AU25PMYFpiFeVSp4rYbXytFHKUJ01IrCUBororjW5e5LOP8hSI-3OnQf1bFxaL81wHv0040XBZX72LQmvNnd_G8j_jTWBTfzP9AhXhC5oiQ_iNzD7fGMbozj-klH9BlgpsownbFpi1qXyghjKon6iygUSiMMDMBUhzrNc5QhC5_tGvS3bWuPWfaAaxuQJ2Jq10AfB5h-IF8hLkz7crl0HJ4cds3jkeRq7N4uLf0tiADhF8-MXyePo_Mc-RJGm1Wp8zzsnWjddP" />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+            </div>
+            <h4 class="reveal reveal-left text-2xl font-headline font-bold text-on-surface mb-2">Fintech Mobile App</h4>
+            <p class="reveal reveal-right text-on-surface-variant text-sm mb-6 leading-relaxed">A high-security, ultra-fast transaction engine with real-time biometric verification.</p>
+            <a class="inline-flex items-center gap-2 text-secondary font-bold text-sm hover:underline" href="index.html#contact">Visit Project <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+          </div>
+          <div class="reveal reveal-up stagger-1 group relative bg-surface-container rounded-xl p-6 border border-outline-variant/15 hover:border-secondary/40 transition-all duration-500 hover:-translate-y-2">
+            <div class="aspect-[4/5] rounded-lg overflow-hidden mb-8 relative">
+              <img alt="HealthTech Interface" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe_R1EJnAVLFmHIrbROQ3b6PO-qjOrLxd-2X2HkSFHOf8Zj-AD-1JiFR6skYsw-Hva3nDuP4CfFho54DItYl-DsvdYqQY6xokZ1vv3jcqfzLAznBO4c8sqGlC-fDXSAGwCdGj_6zsQB_oE3DujYimaT4BHx7b-hYHYE3Pp-N-Jz8P2oRi-MMJku6iZCESt3Cb6wnUNy2tndcRAxyHBtS-autdscodwIiFca7jHYu5iw8vzKb5ivFwo0y__KllKjLuaRE2An2VnKgVw" />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+            </div>
+            <h4 class="reveal reveal-left text-2xl font-headline font-bold text-on-surface mb-2">HealthTech Dashboard</h4>
+            <p class="reveal reveal-right text-on-surface-variant text-sm mb-6 leading-relaxed">Intelligent patient monitoring platform integrating AI-driven diagnostic tools.</p>
+            <a class="inline-flex items-center gap-2 text-secondary font-bold text-sm hover:underline" href="ai-automation-detail.html">Visit Project <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+          </div>
+          <div class="reveal reveal-up stagger-2 group relative bg-surface-container rounded-xl p-6 border border-outline-variant/15 hover:border-primary-container/40 transition-all duration-500 hover:-translate-y-2">
+            <div class="aspect-[4/5] rounded-lg overflow-hidden mb-8 relative">
+              <img alt="Social Media Platform" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtsKS_o1NFkEn8TaGXTDCiiJO4BOg5WYIAVQBABf_ZNUO3k2qPkDOsj47nvHvLcqStv-nu_yStbwJNgxtDK3FrUAGiLsK88d7XBJsmQ1-2iBeIIpbcEYIp6RVNKK7q-vSjQspCPcUYuPMraJBBxo1YDCUkzbsGC2QneOMny9cNryf0mfAUqHWQJWqUscrbmFUHtumqVffV2Z8apDshzFMU_uApJX5TmVc5eP6QTT2Pa2N3N_EP0Aw9kmvhZGjFcj93CaR8i9Cjqzy1" />
+              <div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+            </div>
+            <h4 class="reveal reveal-left text-2xl font-headline font-bold text-on-surface mb-2">Social Media Engine</h4>
+            <p class="reveal reveal-right text-on-surface-variant text-sm mb-6 leading-relaxed">Distributed architecture designed for high-concurrency video streaming and social graph data.</p>
+            <a class="inline-flex items-center gap-2 text-secondary font-bold text-sm hover:underline" href="website-detail.html">Visit Project <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-slate-900 w-full py-12 px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto border-t border-slate-800/30 pt-12">
+        <div class="space-y-6">
+          <div class="text-lg font-black text-indigo-100 font-headline">COL Games</div>
+          <p class="reveal reveal-up text-slate-500 font-inter text-sm tracking-wide max-w-xs">Architecting the future of digital interactions through high-end engineering and editorial design.</p>
+          <div class="text-slate-500 font-inter text-sm tracking-wide">© 2024 COL Games. All rights reserved.</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-bold text-outline uppercase tracking-widest">Legal</span>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="privacy-policy.html">Privacy Policy</a>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-bold text-outline uppercase tracking-widest">Social</span>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Instagram</a>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">YouTube</a>
+          </div>
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-bold text-outline uppercase tracking-widest">More</span>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">TikTok</a>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Github</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/site.js"></script>
+    <script src="assets/js/web-app-projects.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/projects-sync.js"></script>
+</body>
+</html>
+

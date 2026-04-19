@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Development | COL Games</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            surface: "#0b1326",
+            "on-surface": "#dae2fd",
+            "on-surface-variant": "#c7c4d8",
+            primary: "#c0c1ff",
+            "primary-fixed": "#e1e0ff",
+            "primary-fixed-dim": "#c0c1ff",
+            "primary-container": "#4b4dd8",
+            secondary: "#4cd7f6",
+            "on-secondary": "#003640",
+            "on-secondary-fixed": "#001f26",
+            "secondary-container": "#03b5d3",
+            tertiary: "#ddb8ff",
+            "surface-container": "#171f33",
+            "surface-container-low": "#131b2e",
+            "surface-container-high": "#222a3d",
+            "surface-container-highest": "#2d3449",
+            "outline-variant": "#464555",
+            "on-primary": "#1000a9",
+            "on-primary-container": "#d9d8ff",
+            "background": "#0b1326",
+            "surface-bright": "#31394d"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-primary-fixed overflow-x-hidden">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-vignette"></div>
+  <nav class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-xl shadow-2xl shadow-slate-950/50">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="flex items-center space-x-4">
+        <a aria-label="Back to landing page" class="group flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-highest/60 backdrop-blur-md text-on-surface-variant hover:text-primary border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 shadow-lg shrink-0" href="index.html">
+          <span class="material-symbols-outlined transition-transform duration-300 group-hover:-translate-x-1">arrow_back</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter text-indigo-100 font-headline whitespace-nowrap">COL Games</div>
+      </div>
+      <div class="hidden md:flex items-center space-x-10 font-manrope tracking-tight font-medium">
+        <a class="text-indigo-200 font-semibold border-b-2 border-cyan-400 pb-1" href="index.html#services" data-static-i18n="services" data-no-auto-translate>Services</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="portfolio.html" data-static-i18n="portfolio" data-no-auto-translate>Portfolio</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="privacy-policy.html" data-static-i18n="about" data-no-auto-translate>About</a>
+      </div>
+      <div class="flex items-center space-x-6">
+        <button class="text-indigo-200 hover:text-cyan-400 transition-colors font-medium">EN</button>
+        <a class="px-5 py-2 bg-primary-container text-on-primary-container rounded-md font-semibold hover:brightness-125 transition-all active:scale-95 duration-200" href="index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-24">
+    <section class="relative min-h-[716px] flex items-center px-8 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute top-1/4 -right-20 w-96 h-96 bg-secondary-container/20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-1/4 -left-20 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full"></div>
+      </div>
+      <div class="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8">
+          <span class="text-secondary font-label text-xs uppercase tracking-[0.2em] mb-4 block reveal reveal-right">Cutting-Edge Web Solutions</span>
+          <h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1] max-w-3xl reveal reveal-left">
+            Mastering the <span class="text-gradient">Web</span>
+          </h1>
+          <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-10 reveal reveal-up stagger-1">
+            We build high-performance digital architecture that transcends conventional standards. Our approach fuses editorial aesthetics with technical precision to deliver unmatched scalability.
+          </p>
+          <div class="flex flex-wrap gap-4 reveal reveal-up stagger-2">
+            <a class="button-gradient px-8 py-4 rounded-md font-bold text-on-primary tracking-wide shadow-xl shadow-primary-container/20 hover:brightness-110 transition-all" href="index.html#contact">Explore Capabilities</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8 bg-surface-container-low overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div class="space-y-6 reveal reveal-up">
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest text-secondary">
+              <span class="material-symbols-outlined">speed</span>
+            </div>
+            <h3 class="text-2xl font-headline font-bold text-on-surface">Performance</h3>
+            <p class="text-on-surface-variant font-light leading-relaxed">Sub-second load times are not a luxury—they are the foundation. We optimize every byte, utilizing edge computing and modern hydration strategies to ensure instant interaction.</p>
+          </div>
+          <div class="space-y-6 reveal reveal-up stagger-1">
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest text-primary">
+              <span class="material-symbols-outlined">search_check</span>
+            </div>
+            <h3 class="text-2xl font-headline font-bold text-on-surface">SEO</h3>
+            <p class="text-on-surface-variant font-light leading-relaxed">Visibility is engineered. Our semantic structure and schema-first approach guarantee that your architected presence is prioritized by search algorithms globally.</p>
+          </div>
+          <div class="space-y-6 reveal reveal-up stagger-2">
+            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-surface-container-highest text-tertiary">
+              <span class="material-symbols-outlined">architecture</span>
+            </div>
+            <h3 class="text-2xl font-headline font-bold text-on-surface">User Experience</h3>
+            <p class="text-on-surface-variant font-light leading-relaxed">We treat the viewport as a 3D stage. Every transition, every scroll, and every interaction is choreographed to provide a sense of physical weight and seamless flow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8 bg-surface overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+          <div class="max-w-2xl reveal reveal-left">
+            <span class="text-secondary font-label text-xs uppercase tracking-[0.2em] mb-4 block">Case Studies</span>
+            <h2 class="text-4xl md:text-5xl font-headline font-bold text-indigo-100">Featured Architectures</h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="group relative bg-surface-container rounded-xl overflow-hidden shadow-2xl transition-transform duration-500 hover:-translate-y-2 reveal reveal-up">
+            <div class="aspect-video overflow-hidden">
+              <img alt="Dashboard UI" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBVUbtyhqc1BlpBpp3ZXb5TST5F5Lt0dd_CpQvgthq3EcQ2AKFU3B1M5E9gP597NFKb20KCxK5Bfwaj038Fn-ta3lFVnePJuulaLLMvog30ofEzztRq6iMO9rqV9pOB3OVklKIQdr0tc2MW23sPb-TNWS76eDnajzcuYIVrl4dL7X01XNFimm3L7C5o-48CzPVij_XqHz3rA5kkwqOq-Eyd3s69bDRon_K-rKzJRD3VLPp2qp4hy4aBzVB3dzZofG8gqq7qGis3KVQ" />
+            </div>
+            <div class="p-8">
+              <h4 class="text-xl font-headline font-bold mb-3">Lumina Systems</h4>
+              <p class="text-on-surface-variant text-sm font-light mb-6">A high-fidelity dashboard for decentralized energy grids, built for extreme data density.</p>
+              <a class="inline-flex items-center text-secondary font-semibold group-hover:underline decoration-2 underline-offset-4" href="index.html#contact">Visit Site <span class="material-symbols-outlined ml-2 text-sm">arrow_outward</span></a>
+            </div>
+          </div>
+          <div class="group relative bg-surface-container rounded-xl overflow-hidden shadow-2xl transition-transform duration-500 hover:-translate-y-2 reveal reveal-up stagger-1">
+            <div class="aspect-video overflow-hidden">
+              <img alt="Tech hardware" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgCFMzHlxwwqPEeWG-2FWGKWNRlZKmYHb-6HHXqkiLAZi7LxHU43Luehh8n7ISLKwdvxFyjmhxEMEJ7E4PUDuysC5fM8sQyAQIvDxf-fxXA-9QaGvuEnedMUntGr9w7NPcGjdrMnpJKQ73r98ERkRTWQM8ztFAEb5Zb1hTbzW9aqBUz69reut9LrotN2k-xiDC0xLIXod4ycXsVXy8BWQz90AH5nWUEo6OSoRL71onsySJPLVBqX4r7TeTSDTsFTOQbNgqFCyd_bkp" />
+            </div>
+            <div class="p-8">
+              <h4 class="text-xl font-headline font-bold mb-3">Void Commerce</h4>
+              <p class="text-on-surface-variant text-sm font-light mb-6">Redefining high-end retail through immersive headless commerce architecture.</p>
+              <a class="inline-flex items-center text-secondary font-semibold group-hover:underline decoration-2 underline-offset-4" href="web-app-detail.html">Visit Site <span class="material-symbols-outlined ml-2 text-sm">arrow_outward</span></a>
+            </div>
+          </div>
+          <div class="group relative bg-surface-container rounded-xl overflow-hidden shadow-2xl transition-transform duration-500 hover:-translate-y-2 reveal reveal-up stagger-2">
+            <div class="aspect-video overflow-hidden">
+              <img alt="Abstract digital" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNvKILnVyAmlLS_3bvO3vRwThMN21AiQhxq-yaWkFJjbXyJ_olMP-Wm2yZQZStCMvNOfpqSjVASN7X7k4JXJY3jyloDFE89g1vk5Eb60HtOUiOxafU_AMCwpc0UtGRE8-0duksVB-Z3fzLK8h8zS3ncXbhwPZZd0DHWKehSWyGnAlscv_XbxPqC3tFi9vG1X5_kEJllIdNxnGwdtYJ25VSUTRAtsIAXOfN5TVXg1Z7XWDua-khfT6t5hz_J9nOGDh4VTU2eqsY-Wb7" />
+            </div>
+            <div class="p-8">
+              <h4 class="text-xl font-headline font-bold mb-3">Atlas Protocol</h4>
+              <p class="text-on-surface-variant text-sm font-light mb-6">Real-time geospatial mapping tool optimized for sub-100ms interaction latency.</p>
+              <a class="inline-flex items-center text-secondary font-semibold group-hover:underline decoration-2 underline-offset-4" href="ai-automation-detail.html">Visit Site <span class="material-symbols-outlined ml-2 text-sm">arrow_outward</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-40 px-8 relative overflow-hidden">
+      <div class="absolute inset-0 bg-surface-container-low -z-10"></div>
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tighter text-on-surface mb-10 leading-tight reveal reveal-left">Ready to start your <br /> <span class="text-gradient">next project?</span></h2>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-6 reveal reveal-up">
+          <a class="button-gradient w-full md:w-auto px-12 py-5 rounded-md font-bold text-on-primary tracking-wide text-lg shadow-2xl shadow-primary-container/40 hover:scale-105 transition-transform" href="index.html#contact">Launch Development</a>
+          <a class="w-full md:w-auto px-12 py-5 rounded-md font-bold text-secondary border border-outline-variant/30 hover:bg-surface-container-high transition-colors text-lg" href="privacy-policy.html">View Pricing</a>
+        </div>
+        <p class="mt-8 text-on-surface-variant font-light text-sm reveal reveal-up stagger-1">Average deployment timeline: 8-12 weeks for enterprise-grade architecture.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-slate-900 w-full py-12 px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto border-t border-slate-800/30 pt-12">
+      <div class="space-y-6">
+        <div class="text-lg font-black text-indigo-100 font-headline">COL Games</div>
+        <p class="reveal reveal-up text-slate-500 font-inter text-sm tracking-wide max-w-xs">Architecting the future of digital interactions through high-end engineering and editorial design.</p>
+        <div class="text-slate-500 font-inter text-sm tracking-wide">© 2024 COL Games. All rights reserved.</div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex flex-col gap-4">
+          <span class="text-xs font-bold text-outline uppercase tracking-widest">Legal</span>
+          <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="privacy-policy.html">Privacy Policy</a>
+          <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="text-xs font-bold text-outline uppercase tracking-widest">Social</span>
+          <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Instagram</a>
+          <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">YouTube</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="text-xs font-bold text-outline uppercase tracking-widest">More</span>
+          <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">TikTok</a>
+          <a class="text-slate-500 hover:text-indigo-300 transition-colors font-inter text-sm tracking-wide opacity-80 hover:opacity-100" href="#">Github</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/projects-sync.js"></script>
+</body>
+</html>
+

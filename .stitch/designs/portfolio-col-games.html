@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio | COL Games</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#2d3449",
+                        "inverse-primary": "#494bd6",
+                        "secondary-fixed-dim": "#4cd7f6",
+                        "surface-container-lowest": "#060e20",
+                        "primary": "#c0c1ff",
+                        "outline": "#918fa1",
+                        "on-surface": "#dae2fd",
+                        "surface-dim": "#0b1326",
+                        "background": "#0b1326",
+                        "secondary": "#4cd7f6",
+                        "on-error": "#690005",
+                        "surface-bright": "#31394d",
+                        "error": "#ffb4ab",
+                        "primary-container": "#4b4dd8",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "outline-variant": "#464555",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6",
+                        "inverse-surface": "#dae2fd",
+                        "tertiary-fixed-dim": "#ddb8ff",
+                        "surface-variant": "#2d3449",
+                        "on-secondary-container": "#00424e",
+                        "on-secondary-fixed": "#001f26",
+                        "surface": "#0b1326",
+                        "secondary-fixed": "#acedff",
+                        "on-secondary-fixed-variant": "#004e5c",
+                        "surface-container-high": "#222a3d",
+                        "tertiary-container": "#7d42b6",
+                        "tertiary": "#ddb8ff",
+                        "on-secondary": "#003640",
+                        "on-tertiary-fixed": "#2c0051",
+                        "inverse-on-surface": "#283044",
+                        "secondary-container": "#03b5d3",
+                        "surface-tint": "#c0c1ff",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-surface-variant": "#c7c4d8",
+                        "tertiary-fixed": "#f0dbff",
+                        "on-tertiary-fixed-variant": "#62259b",
+                        "on-tertiary-container": "#ebd1ff",
+                        "on-tertiary": "#490081",
+                        "on-background": "#dae2fd",
+                        "surface-container-low": "#131b2e",
+                        "on-primary": "#1000a9",
+                        "on-primary-fixed": "#07006c",
+                        "on-primary-container": "#d9d8ff",
+                        "surface-container": "#171f33",
+                        "primary-fixed": "#e1e0ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .preserve-3d {
+            transform-style: preserve-3d;
+        }
+        .card-3d:hover {
+            transform: rotateY(10deg) rotateX(5deg);
+        }
+        .glass-panel {
+            background: rgba(49, 57, 77, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-2xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.1)]">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-[1440px] mx-auto">
+<div class="flex items-center gap-6">
+<a class="text-indigo-200 hover:brightness-125 transition-all duration-300 active:scale-95" href="#">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</a>
+<span class="text-2xl font-black tracking-tighter text-indigo-200 font-headline">COL Games</span>
+</div>
+<nav class="hidden md:flex gap-10">
+<a class="text-cyan-400 border-b-2 border-cyan-400 pb-1 font-inter font-medium hover:brightness-125 transition-all" href="#">Projects</a>
+<a class="text-slate-400 font-medium font-inter hover:brightness-125 hover:text-white transition-all" href="#">About</a>
+<a class="text-slate-400 font-medium font-inter hover:brightness-125 hover:text-white transition-all" href="#">Studio</a>
+<a class="text-slate-400 font-medium font-inter hover:brightness-125 hover:text-white transition-all" href="#">Contact</a>
+</nav>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-md font-bold hover:brightness-110 transition-all duration-300 active:scale-95 shadow-lg shadow-primary-container/20">
+                Hire Us
+            </button>
+</div>
+</header>
+<main class="pt-40 pb-20 px-8 max-w-[1440px] mx-auto">
+<!-- Hero Section -->
+<section class="mb-24 relative">
+<div class="absolute -top-40 -left-20 w-96 h-96 bg-secondary-container opacity-10 rounded-full blur-[120px]"></div>
+<div class="max-w-3xl">
+<span class="text-xs uppercase tracking-widest text-secondary font-label font-bold mb-4 block">Selected Works</span>
+<h1 class="text-7xl font-headline font-bold tracking-tighter text-indigo-200 mb-8 leading-none">
+                    Architecting <br/>Digital Atmospheres
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    We blend technical precision with editorial authority to build high-performance products that feel infinite. Explore our latest prototypes and architectural releases.
+                </p>
+</div>
+</section>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 perspective-1000">
+<!-- Project Card 1: Fintech App -->
+<div class="group relative card-3d preserve-3d transition-transform duration-500 ease-out">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-2xl p-px group-hover:bg-gradient-to-br group-hover:from-secondary/30 group-hover:to-transparent">
+<div class="bg-surface-container rounded-[inherit] overflow-hidden">
+<div class="relative h-64 overflow-hidden">
+<img alt="Fintech App" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Futuristic fintech app interface with glowing neon charts and glassmorphism cards on a deep dark professional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfUQh4FnBP7tf6NlFuRkhfZBYM7dvXKYhPulOTHhfrNhB4I_KdgSJ3_0Y42qfEZngj6233RGVYrh8JY8pCU1Bjmkd4vkQ75yjjsGW9iOPOXPJ_XkQfBltmOlEzfVcWZ6x2SKOkbMeNfXZXRhMDB5SXgg3Mne2xu3d4Eu7jCF3v3N7w8o11urcfmktD1cPGslxgkDF83Z0EXEeE30XrHBWrhTUo098dCtb_aW_m1nqdZu8-tcBsoQVZiBVAX-dC3ifJpn82GxSgQvdq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<div class="p-8">
+<span class="text-[10px] text-secondary tracking-[0.2em] font-label font-bold uppercase mb-2 block">Mobile Strategy</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Fintech Neo-Bank</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A frictionless digital banking experience built with high-concurrency architecture and sub-millisecond data synchronization.</p>
+<div class="flex items-center text-primary font-bold text-sm gap-2 cursor-pointer hover:translate-x-1 transition-transform">
+                                VIEW CASE STUDY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 2: HealthTech Dashboard -->
+<div class="group relative card-3d preserve-3d transition-transform duration-500 ease-out lg:mt-12">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-2xl p-px group-hover:bg-gradient-to-br group-hover:from-primary/30 group-hover:to-transparent">
+<div class="bg-surface-container rounded-[inherit] overflow-hidden">
+<div class="relative h-64 overflow-hidden">
+<img alt="HealthTech Dashboard" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Advanced medical data visualization dashboard with ethereal cyan light glows and clean minimalist health metrics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_39YdRjz_sLr1BzOaQKNH8sLEonK7igTKF4qMEcWoXcDte58ADH82HrSmwdNkakMZFsjnkAmthPuaAc3yz86hIx76CN-8Z9DfIGV3H84dRmrPu8j7Z5KI57GFn9UQtYoERJjKpmzGRf6T1mK5xmL4EjsoVaHbnbnXOPRETCLByWIOPTIxD9Bchoa3Y4GFewCOjyjyECdYLSK3x-SN1hTpkqx1fm4Kd3xlRU3fWimgdyBTWfVSkgBlG4hbErLQiy47QRwdOBiu9QO9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<div class="p-8">
+<span class="text-[10px] text-secondary tracking-[0.2em] font-label font-bold uppercase mb-2 block">System Architecture</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Vitals Analytics</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Editorial-grade medical dashboard focusing on patient recovery trajectories through predictive AI modeling.</p>
+<div class="flex items-center text-primary font-bold text-sm gap-2 cursor-pointer hover:translate-x-1 transition-transform">
+                                VIEW CASE STUDY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 3: AI Trading Bot -->
+<div class="group relative card-3d preserve-3d transition-transform duration-500 ease-out">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-2xl p-px group-hover:bg-gradient-to-br group-hover:from-secondary/30 group-hover:to-transparent">
+<div class="bg-surface-container rounded-[inherit] overflow-hidden">
+<div class="relative h-64 overflow-hidden">
+<img alt="AI Trading Bot" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Abstract visualization of neural networks and trading nodes with electric indigo and cyan pulses in a void space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Byr0UF4Gf2l3iiTgO9tnIdAUze_C5c7C8PmYUXEIwdh1ialqt3BpBeQAXjm8OaFf-PhKr_68um04MBJOb7U614nNslA04W7IINdaFpL315x8DV23f6rsMWwE-CKVNb9v-D6KtmM-Js090mgsYq8SzZ_zTxaf0S8ezA4i8UsoX6yfsjJq4hf_iDUOloln-5_J0pfC9VGPTC05L_2o1zLYvJxvWeqSFb9EoIT4T0WCIj04z-JiF19gJlgBKG4yZjymhF5NzYt_bcI8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<div class="p-8">
+<span class="text-[10px] text-secondary tracking-[0.2em] font-label font-bold uppercase mb-2 block">AI Execution</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Kryptos AI Bot</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">High-frequency algorithmic trading platform with real-time neural network sentiment analysis.</p>
+<div class="flex items-center text-primary font-bold text-sm gap-2 cursor-pointer hover:translate-x-1 transition-transform">
+                                VIEW CASE STUDY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 4: Web3 Marketplace -->
+<div class="group relative card-3d preserve-3d transition-transform duration-500 ease-out">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-2xl p-px group-hover:bg-gradient-to-br group-hover:from-primary/30 group-hover:to-transparent">
+<div class="bg-surface-container rounded-[inherit] overflow-hidden">
+<div class="relative h-64 overflow-hidden">
+<img alt="Web3 Marketplace" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Holographic luxury gallery showing 3D digital artifacts with soft atmospheric lighting and floating interface elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdO_ts1izmGqc_RPnOrIAPlN2YMbrDtVvACAQpYJWBtF8jjJCMFcCA004IGoBo8943ccKDPMY9gs911W0h3b17kIKrFwVQlG1X4lV8rPhBBusha-aH3L6MYk03GxQ91VDxD5U3ECZzhwFcOsxx2_hTPk8W-xq-yj0TUXhw8UwfxVd8xJ42_2gmIgwSl6NeDFXXy-kMZa4r1TNnOjZkqcUs0c1-BUxo_4wkaASv0Py2dFOANbDEZGqiM64RG8HgGR2lzFU9-cNKwmM6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<div class="p-8">
+<span class="text-[10px] text-secondary tracking-[0.2em] font-label font-bold uppercase mb-2 block">E-Commerce</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Aura Marketplace</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A premium digital asset foundry focusing on atmospheric NFT displays and low-gas minting protocols.</p>
+<div class="flex items-center text-primary font-bold text-sm gap-2 cursor-pointer hover:translate-x-1 transition-transform">
+                                VIEW CASE STUDY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 5: Smart City OS -->
+<div class="group relative card-3d preserve-3d transition-transform duration-500 ease-out lg:mt-12">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-2xl p-px group-hover:bg-gradient-to-br group-hover:from-secondary/30 group-hover:to-transparent">
+<div class="bg-surface-container rounded-[inherit] overflow-hidden">
+<div class="relative h-64 overflow-hidden">
+<img alt="Smart City OS" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Stylized isometric 3D city model with data flow lines and glowing infrastructure points in a dark technical style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBYJqKVihQk0RtTbBA8-ai7hE5-CWWjGjbFcusdU9ydvPEJCZ0RfVmKVguUzrEO-pGbhZ4-KThBprJeEMMv18Wy41r6UTvSQcJMCNpfXaRyp08bhr2aD6VzTG5yX85uo5Q6t7GevuotNdclR30XrZUr6jvxAPP8pnv-041oZbc9SP76edBBUV3msuTuuDGKiAhC9L7WHfWcWOuZGxNHBxPJ1EoglFZOqCRPcpWGNWeFw2o14o8zvbcCbmUhZD6M-2AFYXv7GaSB9I3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<div class="p-8">
+<span class="text-[10px] text-secondary tracking-[0.2em] font-label font-bold uppercase mb-2 block">IoT Infrastructure</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">UrbanPulse OS</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Centralized urban management system utilizing real-time sensor arrays for traffic and energy optimization.</p>
+<div class="flex items-center text-primary font-bold text-sm gap-2 cursor-pointer hover:translate-x-1 transition-transform">
+                                VIEW CASE STUDY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Card 6: VR Training Suite -->
+<div class="group relative card-3d preserve-3d transition-transform duration-500 ease-out">
+<div class="bg-surface-container rounded-xl overflow-hidden shadow-2xl p-px group-hover:bg-gradient-to-br group-hover:from-primary/30 group-hover:to-transparent">
+<div class="bg-surface-container rounded-[inherit] overflow-hidden">
+<div class="relative h-64 overflow-hidden">
+<img alt="VR Training Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Close up of a VR headset reflecting a complex 3D engineering wireframe with dramatic lighting and bokeh depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJCQDfATFSw8sb638z3YSVQL6P7lbxiyoknSGjTnyxLSS-beP8Cr6j4TRaZy6lNOWKJlvzwOtABgnuAdjRgyIukVQ0RCVKrbUf3TPxUGuLofuIqFOzxyuySP3U-0mkPpGqWirE6Yqr9i-4PtM1yZNIM_t1gQijE0FHVZaOY9HThUE98cJPE4MrtpPZ3nbJF2fXe9Ve9ojiiN77G7tm6eZWDGI_Ec6Qwd120VvOco6GShSTP0XBeEImFGiKv6oNedLEBs_vZiz_0OTc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent opacity-60"></div>
+</div>
+<div class="p-8">
+<span class="text-[10px] text-secondary tracking-[0.2em] font-label font-bold uppercase mb-2 block">Spatial Computing</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-3 tracking-tight">Nexus VR Training</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Immersive technical training modules for high-risk industrial operations with haptic feedback integration.</p>
+<div class="flex items-center text-primary font-bold text-sm gap-2 cursor-pointer hover:translate-x-1 transition-transform">
+                                VIEW CASE STUDY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<section class="mt-40 mb-20">
+<div class="glass-panel p-16 rounded-xl border border-outline-variant/10 relative overflow-hidden text-center max-w-4xl mx-auto">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary opacity-10 rounded-full blur-[80px]"></div>
+<h2 class="text-4xl font-headline font-bold text-indigo-200 mb-6 tracking-tight">Ready to build the future?</h2>
+<p class="text-on-surface-variant max-w-lg mx-auto mb-10 leading-relaxed">
+                    We are currently accepting new architectural challenges for the upcoming quarter. Let's design something ethereal.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-md font-bold hover:brightness-110 transition-all active:scale-95 shadow-xl shadow-primary-container/20">
+                        Start a Project
+                    </button>
+<button class="bg-transparent border border-outline-variant text-secondary px-10 py-4 rounded-md font-bold hover:bg-secondary/10 transition-all active:scale-95">
+                        Download Portfolio
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-24 mt-32 bg-slate-900/50">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
+<div class="flex flex-col gap-2">
+<span class="text-slate-400 font-bold font-headline text-xl">COL Games</span>
+<p class="text-slate-500 font-inter text-xs uppercase tracking-widest opacity-80">© 2024 COL Games. Architecting digital atmospheres.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-600 font-inter text-xs uppercase tracking-widest hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="text-slate-600 font-inter text-xs uppercase tracking-widest hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="text-slate-600 font-inter text-xs uppercase tracking-widest hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="text-slate-600 font-inter text-xs uppercase tracking-widest hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,82 @@
+# Environment & Configuration
+.env
+.env.local
+.env.*.local
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+.node-version
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS
+Thumbs.db
+*.exe
+*.dll
+*.o
+*.a
+*.lib
+
+# Build & Dist
+dist/
+build/
+.cache/
+.next/
+out/
+
+# Data & Secrets (SENSITIVE)
+/data/
+data/projects.json
+data/admin-config.json
+*.json.bak
+
+# Admin Panel (LOCAL ONLY)
+/admin.html
+admin.html
+
+# Screenshots & Temporary Files
+screenshot_*.png
+screenshots/
+*.tmp
+*.bak
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+venv/
+env/
+
+# Testing
+.coverage
+.nyc_output/
+coverage/
+
+# Session & State
+session-state/
+.copilot/
+
+# Third-party
+/vendor/
+/jspm_packages/
+
+# Compiled files
+*.min.js
+*.min.css

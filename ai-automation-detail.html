@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Tooling & Automation | COL Games</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            surface: "#0b1326",
+            "on-surface": "#dae2fd",
+            "on-surface-variant": "#c7c4d8",
+            primary: "#c0c1ff",
+            "primary-fixed": "#e1e0ff",
+            "primary-fixed-dim": "#c0c1ff",
+            "primary-container": "#4b4dd8",
+            secondary: "#4cd7f6",
+            "on-secondary": "#003640",
+            "on-secondary-fixed": "#001f26",
+            "secondary-container": "#03b5d3",
+            tertiary: "#ddb8ff",
+            "surface-container": "#171f33",
+            "surface-container-low": "#131b2e",
+            "surface-container-high": "#222a3d",
+            "surface-container-highest": "#2d3449",
+            "outline-variant": "#464555",
+            "on-primary": "#1000a9",
+            "on-primary-container": "#d9d8ff",
+            "background": "#0b1326",
+            "surface-bright": "#31394d"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="font-body selection:bg-primary/30">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-vignette"></div>
+  <nav class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-xl shadow-2xl shadow-slate-950/50">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="flex items-center gap-4">
+        <a aria-label="Back to landing page" class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-container/80 backdrop-blur-md border border-outline-variant/30 text-indigo-100 hover:bg-primary hover:text-on-primary transition-all duration-300 group shadow-lg" href="index.html">
+          <span class="material-symbols-outlined transition-transform group-hover:-translate-x-1">arrow_back</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter text-indigo-100 font-headline">COL Games</div>
+      </div>
+      <div class="hidden md:flex items-center gap-8 font-manrope tracking-tight font-medium">
+        <a class="text-indigo-200 font-semibold border-b-2 border-cyan-400 pb-1" href="index.html#services">Services</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="portfolio.html" data-static-i18n="portfolio" data-no-auto-translate>Portfolio</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="privacy-policy.html" data-static-i18n="about" data-no-auto-translate>About</a>
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="text-slate-400 hover:text-indigo-200 transition-colors font-manrope tracking-tight font-medium cursor-pointer">EN</span>
+        <a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-md font-semibold hover:brightness-125 transition-all duration-300 scale-95 md:scale-100" href="index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-24">
+    <section class="relative min-h-[819px] flex items-center px-8 max-w-7xl mx-auto overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-container/20 blur-[120px] rounded-full"></div>
+      <div class="absolute top-1/2 -left-24 w-64 h-64 bg-primary-container/10 blur-[100px] rounded-full"></div>
+      <div class="relative z-10 w-full md:w-2/3 reveal reveal-left">
+        <span class="text-secondary font-label text-xs uppercase tracking-[0.2em] mb-4 block">Intelligence Redefined</span>
+        <h1 class="text-7xl font-headline font-extrabold tracking-tighter leading-[0.9] mb-8 text-indigo-100">
+          The Future of <br /><span class="text-gradient">Autonomous Operations</span>
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-xl leading-relaxed font-light mb-10">
+          Architecting cognitive environments where agents don't just follow instructions—they anticipate outcomes and evolve workflows in real-time.
+        </p>
+        <div class="flex gap-4">
+          <a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-md font-bold text-sm tracking-wide shadow-xl shadow-primary/20 hover:brightness-110 transition-all" href="index.html#contact">EXPLORE SOLUTIONS</a>
+          <a class="border border-outline-variant/30 text-secondary px-8 py-4 rounded-md font-bold text-sm tracking-wide hover:bg-secondary/5 transition-all" href="index.html#contact">WATCH DEMO</a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-surface-container-low py-32 px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+          <div class="md:col-span-4 reveal reveal-left">
+            <h2 class="text-4xl font-headline font-bold text-indigo-100 mb-6">Technical <br />Ecosystem</h2>
+            <div class="w-16 h-1 bg-cyan-400"></div>
+          </div>
+          <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-px bg-outline-variant/10 rounded-xl overflow-hidden">
+            <div class="bg-surface-container p-10 hover:bg-surface-container-high transition-colors reveal reveal-up">
+              <span class="material-symbols-outlined text-cyan-400 text-4xl mb-6">neurology</span>
+              <h3 class="text-xl font-headline font-bold text-indigo-100 mb-4">Neural Architectures</h3>
+              <p class="text-on-surface-variant leading-relaxed">Multi-layered deep learning models that process unstructured data at scale, enabling decision-making that mirrors expert human logic.</p>
+            </div>
+            <div class="bg-surface-container p-10 hover:bg-surface-container-high transition-colors reveal reveal-up">
+              <span class="material-symbols-outlined text-cyan-400 text-4xl mb-6">query_stats</span>
+              <h3 class="text-xl font-headline font-bold text-indigo-100 mb-4">Process Mining</h3>
+              <p class="text-on-surface-variant leading-relaxed">Algorithmic discovery of operational bottlenecks using event logs, creating a digital twin of your organizational efficiency.</p>
+            </div>
+            <div class="bg-surface-container p-10 hover:bg-surface-container-high transition-colors reveal reveal-up">
+              <span class="material-symbols-outlined text-cyan-400 text-4xl mb-6">psychology</span>
+              <h3 class="text-xl font-headline font-bold text-indigo-100 mb-4">Cognitive Automation</h3>
+              <p class="text-on-surface-variant leading-relaxed">Beyond RPA: systems that learn from exceptions and self-correct, reducing human intervention by up to 85% in complex cycles.</p>
+            </div>
+            <div class="bg-surface-container p-10 hover:bg-surface-container-high transition-colors reveal reveal-up">
+              <span class="material-symbols-outlined text-cyan-400 text-4xl mb-6">hub</span>
+              <h3 class="text-xl font-headline font-bold text-indigo-100 mb-4">Agentic Swarms</h3>
+              <p class="text-on-surface-variant leading-relaxed">Distributed networks of autonomous agents that collaborate on complex tasks, sharing intelligence and accelerating delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8 max-w-7xl mx-auto overflow-hidden">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div class="max-w-2xl reveal reveal-left">
+          <span class="text-secondary font-label text-xs tracking-widest mb-4 block">CASE STUDIES</span>
+          <h2 class="text-5xl font-headline font-bold text-indigo-100 tracking-tight">Deployments in the Wild</h2>
+        </div>
+        <div class="reveal reveal-right">
+          <p class="text-on-surface-variant font-light md:text-right max-w-xs">High-performance AI implementations across global financial and logistics hubs.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="group relative bg-surface-container-highest rounded-xl overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-outline-variant/10 reveal reveal-up">
+          <div class="aspect-[4/5] relative overflow-hidden">
+            <img alt="Supply Chain Logistics" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBWCmfZjodHb5PB9SzAUK0iXkeNP31-dp2A2uia9tpsfu_lHMe0X9HD2zszk9IdPPt2RGWb7Ilj5ea3nz6I0Y3sWOtgsxvSocOFFAFBB08a6Ov3YOukxS1HWTy5rEY2mV-lLFzA82jdldAru-xMQghZyrId_23OFmck7WjbTzIFyS87m9ZWNyPNHVJaWOnVZdp-3ySDjizi6d_Uhz6Ti5PWpXk8FTMdCQMjnMd7S_U7apJ7XTw9WN4CDFzIra-_DShrN0pt55f35o5" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 p-8 w-full">
+            <h4 class="text-2xl font-headline font-bold text-white mb-2">Supply Chain Optimizer</h4>
+            <p class="text-on-surface-variant text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Real-time logistics re-routing using predictive agent swarms.</p>
+            <a class="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs tracking-widest uppercase" href="index.html#contact">Visit Project <span class="material-symbols-outlined text-sm">arrow_outward</span></a>
+          </div>
+        </div>
+        <div class="group relative bg-surface-container-highest rounded-xl overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-outline-variant/10 reveal reveal-up">
+          <div class="aspect-[4/5] relative overflow-hidden">
+            <img alt="Customer Support" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjj4nvf10-b3MyQbcCEaEgDZCsY4cJQzmcQ_LpIn3twmU7NkWcLcB7ynroR5WSJYpR2MgkR9C4OnqtqlCzE9IdvR-CcTVA_icUte_qu4czqOvgnRfNSRpRvkzZAlZqlEEBTHOmpp-pe3_CtGkZALe4ZNuS0_AimGKppJQE_nO0MQbcwuZD3Dq6XeWST7kJJgQ75RpxoM0MRX5IzEDDHvZD5b2KEEa0f-yInJzyTqqDEClg77uaLTwRjUwK4qggjwDEX0kttVjHOBzo" />
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+          </div>
+          <div class="absolute bottom-0 p-8 w-full">
+            <h4 class="text-2xl font-headline font-bold text-white mb-2">Customer Support Agent</h4>
+            <p class="text-on-surface-variant text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">LLM-driven empathy engine handling 40k+ daily interactions.</p>
+            <a class="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs tracking-widest uppercase" href="index.html#contact">Visit Project <span class="material-symbols-outlined text-sm">arrow_outward</span></a>
+          </div>
+        </div>
+        <div class="group relative bg-surface-container-highest rounded-xl overflow-hidden transition-all duration-500 hover:-translate-y-2 border border-outline-variant/10 reveal reveal-up">
+          <div class="aspect-[4/5] relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-primary-container/30 to-secondary-container/20">
+            <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+            <span class="material-symbols-outlined text-6xl text-secondary-container/50 relative z-10">layers</span>
+          </div>
+          <div class="absolute bottom-0 p-8 w-full">
+            <h4 class="text-2xl font-headline font-bold text-white mb-2">Other Projects</h4>
+            <p class="text-on-surface-variant text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">Explore additional AI solutions and integrations in our portfolio.</p>
+            <a class="inline-flex items-center gap-2 text-cyan-400 font-bold text-xs tracking-widest uppercase" href="portfolio.html">View Portfolio <span class="material-symbols-outlined text-sm">arrow_outward</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-32 px-8 overflow-hidden">
+      <div class="max-w-7xl mx-auto rounded-3xl bg-gradient-to-br from-surface-container-high to-surface-container relative overflow-hidden p-16 md:p-24 text-center reveal reveal-up">
+        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(76,215,246,0.05),transparent_70%)]"></div>
+        <h2 class="text-5xl md:text-6xl font-headline font-extrabold text-indigo-100 mb-8 relative z-10">Ready to automate <br />your evolution?</h2>
+        <a class="relative z-10 bg-white text-surface px-10 py-5 rounded-md font-bold text-sm tracking-widest hover:bg-cyan-50 transition-all" href="index.html#contact">START THE TRANSFORMATION</a>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-slate-900 w-full py-12 px-8 border-t border-slate-800/30">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 font-inter text-sm tracking-wide">
+      <div class="reveal reveal-left">
+        <div class="text-lg font-black text-indigo-100 mb-4">COL Games</div>
+        <p class="text-slate-500 max-w-sm mb-6">Defining the structural integrity of the digital future through advanced neural design and autonomous systems.</p>
+        <div class="text-cyan-400">© 2024 COL Games. All rights reserved.</div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Legal</div>
+          <div class="flex gap-6">
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors opacity-80 hover:opacity-100" href="privacy-policy.html">Privacy Policy</a>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+          </div>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Social</div>
+          <div class="flex gap-6">
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors opacity-80 hover:opacity-100" href="#">Instagram</a>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors opacity-80 hover:opacity-100" href="#">YouTube</a>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors opacity-80 hover:opacity-100" href="#">TikTok</a>
+            <a class="text-slate-500 hover:text-indigo-300 transition-colors opacity-80 hover:opacity-100" href="#">Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/ai-projects.js"></script>
+  <script src="assets/js/projects-sync.js"></script>
+</body>
+</html>
+

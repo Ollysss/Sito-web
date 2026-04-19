@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | COL Games</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            surface: "#0b1326",
+            "on-surface": "#dae2fd",
+            "on-surface-variant": "#c7c4d8",
+            primary: "#c0c1ff",
+            "primary-fixed": "#e1e0ff",
+            "primary-fixed-dim": "#c0c1ff",
+            "primary-container": "#4b4dd8",
+            secondary: "#4cd7f6",
+            "on-secondary": "#003640",
+            "on-secondary-fixed": "#001f26",
+            "secondary-container": "#03b5d3",
+            tertiary: "#ddb8ff",
+            "surface-container": "#171f33",
+            "surface-container-low": "#131b2e",
+            "surface-container-high": "#222a3d",
+            "surface-container-highest": "#2d3449",
+            "outline-variant": "#464555",
+            "on-primary": "#1000a9",
+            "on-primary-container": "#d9d8ff",
+            "background": "#0b1326",
+            "surface-bright": "#31394d"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Inter"],
+            label: ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface text-on-surface">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-vignette"></div>
+  <nav class="fixed top-0 w-full z-50 bg-slate-950/40 backdrop-blur-xl shadow-2xl shadow-slate-950/50">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <div class="flex items-center gap-6">
+        <a class="group flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/50 backdrop-blur-md border border-slate-700/50 text-slate-400 hover:text-primary hover:border-primary/50 transition-all duration-300 shadow-lg" href="index.html">
+          <span class="material-symbols-outlined transition-transform duration-300 group-hover:-translate-x-1">arrow_back</span>
+        </a>
+        <div class="text-xl font-bold tracking-tighter text-indigo-100 font-headline">COL Games</div>
+      </div>
+      <div class="hidden md:flex items-center space-x-8 font-manrope tracking-tight font-medium">
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="index.html#services">Services</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="portfolio.html" data-static-i18n="portfolio" data-no-auto-translate>Portfolio</a>
+        <a class="text-slate-400 hover:text-indigo-200 transition-colors" href="ai-automation-detail.html" data-static-i18n="about" data-no-auto-translate>About</a>
+      </div>
+      <div class="flex items-center space-x-6">
+        <button class="text-slate-400 hover:text-indigo-200 transition-colors flex items-center gap-1 font-manrope font-medium">
+          <span class="material-symbols-outlined text-sm">language</span>
+          <span>EN</span>
+        </button>
+        <a class="bg-primary-container text-on-primary-container px-5 py-2 rounded-md font-semibold hover:backdrop-brightness-125 transition-all duration-300 scale-95 hover:scale-100" href="index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+  <header class="pt-40 pb-20 px-8 max-w-7xl mx-auto">
+    <div class="max-w-3xl reveal">
+      <p class="text-secondary font-label text-[0.75rem] uppercase tracking-[0.1em] mb-4">Legal Framework</p>
+      <h1 class="text-5xl md:text-6xl font-headline font-extrabold tracking-tight text-on-surface mb-8">
+        Privacy Policy &amp; <br /><span class="text-primary">Terms of Service</span>
+      </h1>
+      <p class="text-on-surface-variant text-lg leading-relaxed font-body reveal-text">
+        Our commitment to transparency, data integrity, and architectural precision extends to how we handle your information and define our professional partnerships. Last updated October 24, 2023.
+      </p>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-8 pb-32">
+    <div class="flex flex-col lg:flex-row gap-16">
+      <aside class="lg:w-64 flex-shrink-0">
+        <div class="sticky top-32 space-y-4">
+          <p class="text-xs font-bold text-outline uppercase tracking-widest mb-6">Contents</p>
+          <nav class="flex flex-col gap-3">
+            <a class="text-sm font-medium text-primary border-l-2 border-primary pl-4 py-1" href="#privacy-overview">Privacy Policy Overview</a>
+            <a class="text-sm font-medium text-slate-500 hover:text-indigo-200 pl-4 py-1 border-l-2 border-transparent transition-all" href="#data-collection">Data Collection</a>
+            <a class="text-sm font-medium text-slate-500 hover:text-indigo-200 pl-4 py-1 border-l-2 border-transparent transition-all" href="#gdpr-compliance">GDPR &amp; Protection</a>
+            <a class="text-sm font-medium text-slate-500 hover:text-indigo-200 pl-4 py-1 border-l-2 border-transparent transition-all" href="#terms-of-service">Terms of Service</a>
+            <a class="text-sm font-medium text-slate-500 hover:text-indigo-200 pl-4 py-1 border-l-2 border-transparent transition-all" href="#intellectual-property">Intellectual Property</a>
+            <a class="text-sm font-medium text-slate-500 hover:text-indigo-200 pl-4 py-1 border-l-2 border-transparent transition-all" href="#sla-liability">SLA &amp; Liability</a>
+          </nav>
+          <div class="mt-12 p-6 rounded-xl bg-surface-container border border-outline-variant/10">
+            <span class="material-symbols-outlined text-secondary mb-3">gavel</span>
+            <h4 class="text-on-surface font-semibold mb-2">Need clarity?</h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed mb-4">Our legal team is available to discuss specific contractual requirements for enterprise clients.</p>
+            <a class="text-xs font-bold text-primary hover:underline" href="mailto:colgames97@gmail.com">Contact Legal →</a>
+          </div>
+        </div>
+      </aside>
+      <article class="flex-grow legal-content max-w-3xl space-y-20">
+        <section class="space-y-6 reveal" id="privacy-overview">
+          <h2 class="text-3xl font-bold tracking-tight">1. Privacy Policy Overview</h2>
+          <div class="space-y-4 text-on-surface-variant leading-relaxed reveal-text">
+        <p>At COL Games, we believe privacy is a fundamental right. This policy outlines how we collect, use, and safeguard the data of our clients and website visitors. As a software development firm, we handle sensitive intellectual property and technical data daily; thus, our security protocols are built to exceed industry standards.</p>
+            <p>This policy applies to all services provided by COL Games, including our consulting engagements, software development lifecycle (SDLC) management, and managed cloud environments.</p>
+          </div>
+        </section>
+        <section class="space-y-6 reveal" id="data-collection">
+          <h2 class="text-3xl font-bold tracking-tight">2. Data Collection &amp; Processing</h2>
+          <div class="space-y-4 text-on-surface-variant leading-relaxed reveal-text">
+            <p>We collect information necessary to provide specialized technical services. This includes:</p>
+            <ul class="list-none space-y-4 mt-6">
+              <li class="flex gap-4">
+                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                <div>
+                  <strong class="text-on-surface">Identity Data:</strong>
+                  <p>Full names, professional titles, and organizational affiliations for contract execution.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                <div>
+                  <strong class="text-on-surface">Technical Artifacts:</strong>
+                  <p>API keys, repository access, and architectural diagrams provided during the development phase.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                <div>
+                  <strong class="text-on-surface">Usage Metrics:</strong>
+                  <p>Telemetry from developed applications used solely for debugging and performance optimization.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="space-y-8 reveal" id="gdpr-compliance">
+          <h2 class="text-3xl font-bold tracking-tight">3. GDPR &amp; Data Protection Rights</h2>
+          <div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-secondary reveal-text">
+            <h3 class="text-on-surface font-bold mb-4">Your Rights Under GDPR</h3>
+            <p class="text-on-surface-variant text-sm mb-6">If you are located within the European Economic Area (EEA), you have specific rights regarding your personal data:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest">Right to Access</span>
+                <p class="text-xs text-on-surface-variant">Request copies of your personal data held in our secure infrastructure.</p>
+              </div>
+              <div class="space-y-2">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest">Right to Erasure</span>
+                <p class="text-xs text-on-surface-variant">Request the permanent deletion of your data under specific conditions.</p>
+              </div>
+              <div class="space-y-2">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest">Data Portability</span>
+                <p class="text-xs text-on-surface-variant">Request the transfer of your data to another organization or directly to you.</p>
+              </div>
+              <div class="space-y-2">
+                <span class="text-xs font-bold text-secondary uppercase tracking-widest">Non-Disclosure</span>
+                <p class="text-xs text-on-surface-variant">Opt-out of any processing activities not essential to service delivery.</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed reveal-text">We implement advanced encryption-at-rest (AES-256) and encryption-in-transit (TLS 1.3) for all client data environments. Access is strictly controlled via Zero Trust architecture and Multi-Factor Authentication (MFA).</p>
+        </section>
+        <section class="space-y-6 reveal" id="terms-of-service">
+          <h2 class="text-3xl font-bold tracking-tight">4. General Terms of Service</h2>
+          <div class="space-y-4 text-on-surface-variant leading-relaxed reveal-text">
+            <p>By engaging with COL Games, you agree to abide by these professional terms. All service engagements are governed by a separate Master Services Agreement (MSA) which takes precedence over these general terms in the event of conflict.</p>
+            <p>Clients are responsible for providing timely feedback and access to necessary internal systems. Delays in provision of required resources may result in adjustment of project timelines and delivery schedules.</p>
+          </div>
+        </section>
+        <section class="space-y-6 reveal" id="intellectual-property">
+          <h2 class="text-3xl font-bold tracking-tight">5. Intellectual Property Rights</h2>
+          <div class="space-y-6 reveal-text">
+            <div class="flex items-start gap-6 p-6 bg-surface-container rounded-xl">
+              <span class="material-symbols-outlined text-primary text-4xl">code</span>
+              <div>
+                <h4 class="text-on-surface font-bold mb-2">Developed Code</h4>
+                <p class="text-on-surface-variant text-sm">Upon full payment of all invoices, all custom source code created specifically for the Client ("Work Product") shall be owned by the Client, unless otherwise specified in the Statement of Work (SOW).</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-6 p-6 bg-surface-container rounded-xl">
+              <span class="material-symbols-outlined text-primary text-4xl">inventory_2</span>
+              <div>
+                <h4 class="text-on-surface font-bold mb-2">COL Games Frameworks</h4>
+                <p class="text-on-surface-variant text-sm">COL Games retains all rights to its pre-existing proprietary tools, frameworks, and libraries utilized during the development process. Clients are granted a perpetual, non-exclusive license to use these components as part of the Work Product.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="space-y-6 reveal" id="sla-liability">
+          <h2 class="text-3xl font-bold tracking-tight">6. SLA &amp; Limitation of Liability</h2>
+          <div class="space-y-4 text-on-surface-variant leading-relaxed reveal-text">
+            <p>For managed services, we guarantee a 99.9% uptime for the infrastructure layers under our direct control. Maintenance windows are scheduled during off-peak hours (UTC 02:00-04:00) with a minimum 48-hour notice.</p>
+            <div class="p-6 border border-outline-variant/20 rounded-lg italic text-sm">"In no event shall COL Games be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the services."</div>
+            <p>Our total liability for any claim arising out of these terms shall not exceed the amount paid by the client to COL Games in the twelve (12) months preceding the claim.</p>
+          </div>
+        </section>
+        <div class="pt-12 border-t border-outline-variant/20 reveal">
+          <p class="text-on-surface-variant mb-4 reveal-text">Questions regarding these terms?</p>
+          <a class="inline-flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors reveal-text" href="mailto:colgames97@gmail.com">
+            <span class="material-symbols-outlined">mail</span>
+            colgames97@gmail.com
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="bg-slate-900 w-full py-12 px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto border-t border-slate-800/30 pt-12">
+      <div class="space-y-4">
+        <div class="text-lg font-black text-indigo-100">COL Games</div>
+        <p class="font-inter text-sm tracking-wide text-slate-500 max-w-xs">Architecting the future of digital infrastructure through precision engineering and exceptional design.</p>
+        <div class="text-cyan-400 font-inter text-sm tracking-wide">© 2024 COL Games. All rights reserved.</div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Legal</div>
+          <div class="flex gap-6">
+            <a class="text-slate-500 hover:text-indigo-300 font-inter text-sm tracking-wide opacity-80 hover:opacity-100 transition-colors" href="privacy-policy.html">Privacy Policy</a>
+            <a class="text-slate-500 hover:text-indigo-300 font-inter text-sm tracking-wide opacity-80 hover:opacity-100 transition-colors" href="#">Terms of Service</a>
+          </div>
+        </div>
+        <div>
+          <div class="text-xs font-bold text-outline uppercase tracking-widest mb-3">Social</div>
+          <div class="flex gap-6">
+            <a class="text-slate-500 hover:text-indigo-300 font-inter text-sm tracking-wide opacity-80 hover:opacity-100 transition-colors" href="#">Instagram</a>
+            <a class="text-slate-500 hover:text-indigo-300 font-inter text-sm tracking-wide opacity-80 hover:opacity-100 transition-colors" href="#">YouTube</a>
+            <a class="text-slate-500 hover:text-indigo-300 font-inter text-sm tracking-wide opacity-80 hover:opacity-100 transition-colors" href="#">TikTok</a>
+            <a class="text-slate-500 hover:text-indigo-300 font-inter text-sm tracking-wide opacity-80 hover:opacity-100 transition-colors" href="#">Github</a>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 transition-colors cursor-pointer">
+            <span class="material-symbols-outlined text-lg">shield</span>
+          </div>
+          <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 transition-colors cursor-pointer">
+            <span class="material-symbols-outlined text-lg">terminal</span>
+          </div>
+          <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 transition-colors cursor-pointer">
+            <span class="material-symbols-outlined text-lg">public</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
+
