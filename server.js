@@ -559,6 +559,18 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    // Export projects data for frontend fallback
+    if (pathname === "/api/export/projects-json" && req.method === "GET") {
+      const projects = loadProjects();
+      res.writeHead(200, {
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Disposition": "attachment; filename=projects.json",
+        "Access-Control-Allow-Origin": "*"
+      });
+      res.end(JSON.stringify(projects, null, 2));
+      return;
+    }
+
     send(res, 404, { error: "Not found" });
     return;
   }
