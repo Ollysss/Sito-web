@@ -1,14 +1,49 @@
 // Projects synchronization - Loads projects from API and populates detail pages dynamically
 (function() {
-  async function loadProjects() {
+  // Load from local fallback first (instant, hardcoded projects)
+  async function loadProjectsLocal() {
+    try {
+      const response = await fetch('/assets/data/projects.json');
+      const data = await response.json();
+      return data || [];
+    } catch (error) {
+      console.warn('Failed to load local projects fallback:', error);
+      return [];
+    }
+  }
+
+  // Load from Render backend (updates fallback data)
+  async function loadProjectsFromRender() {
     try {
       const response = await fetch('https://sito-web-backend.onrender.com/api/projects');
       const data = await response.json();
       return data.projects || [];
     } catch (error) {
-      console.error('Failed to load projects:', error);
-      return [];
+      console.warn('Failed to load projects from Render:', error);
+      return null; // null = use local fallback
     }
+  }
+
+  async function loadProjects() {
+    // Load local fallback immediately
+    const localProjects = await loadProjectsLocal();
+    
+    // Try to fetch from Render with 3 second timeout
+    const renderPromise = Promise.race([
+      loadProjectsFromRender(),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout')), 3000))
+    ]);
+
+    try {
+      const renderProjects = await renderPromise;
+      if (renderProjects && renderProjects.length > 0) {
+        return renderProjects; // Use Render data if available
+      }
+    } catch (error) {
+      console.warn('Render fetch timeout or error, using local fallback');
+    }
+
+    return localProjects || []; // Fallback to local
   }
 
   function findProjectInList(projects, searchTitle) {
