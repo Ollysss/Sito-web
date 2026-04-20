@@ -2,7 +2,7 @@
 (function() {
   async function loadProjects() {
     try {
-      const response = await fetch('/api/projects');
+      const response = await fetch('https://sito-web-backend.onrender.com/api/projects');
       const data = await response.json();
       return data.projects || [];
     } catch (error) {
