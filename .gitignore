@@ -39,10 +39,10 @@ build/
 .next/
 out/
 
-# Data & Secrets (SENSITIVE)
-/data/
-data/projects.json
-data/admin-config.json
+# Data & Secrets (SENSITIVE) - Only in private repo
+# /data/  -- COMMENTED OUT FOR PRIVATE REPO
+# data/projects.json  -- ALLOW IN PRIVATE REPO 
+# data/admin-config.json  -- ALLOW IN PRIVATE REPO
 *.json.bak
 
 # Admin Panel (LOCAL ONLY)
