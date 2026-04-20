@@ -269,6 +269,9 @@ function send(res, statusCode, body, headers = {}) {
     "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
     "Content-Security-Policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https: data:",
     "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
     ...headers
   };
   res.writeHead(statusCode, securityHeaders);
@@ -386,6 +389,17 @@ const server = http.createServer(async (req, res) => {
   const pathname = url.pathname;
 
   if (pathname.startsWith("/api/")) {
+    // Handle CORS preflight requests
+    if (req.method === "OPTIONS") {
+      res.writeHead(200, {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type"
+      });
+      res.end();
+      return;
+    }
+
     if (pathname === "/api/projects" && req.method === "GET") {
       send(res, 200, { projects: loadProjects() });
       return;
