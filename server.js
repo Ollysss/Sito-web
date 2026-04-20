@@ -506,6 +506,7 @@ const server = http.createServer(async (req, res) => {
         send(res, 400, { error: "Invalid project data" });
       }
       return;
+    }
 
     const projectMatch = pathname.match(/^\/api\/admin\/projects\/([a-f0-9\-]+)$/i);
     if (projectMatch && req.method === "PUT") {
