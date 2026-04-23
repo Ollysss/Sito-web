@@ -73,7 +73,7 @@
 ```
 URL: https://search.google.com/search-console
 1. Clicca "Add property"
-2. Enter: https://colgames.com/
+2. Enter: https://colgames.it/
 3. Verify con DNS record o HTML file upload
 4. Go to Sitemaps → Submit robots.txt
 5. Go to Sitemaps → Submit sitemap.xml
@@ -84,7 +84,7 @@ URL: https://search.google.com/search-console
 ```
 URL: https://www.bing.com/webmasters
 1. Sign in con Microsoft account
-2. Add site: https://colgames.com/
+2. Add site: https://colgames.it/
 3. Upload sitemap.xml
 4. Verify di ownership
 ```

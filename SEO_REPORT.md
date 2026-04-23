@@ -49,11 +49,11 @@
   "Organization": {
     "name": "COL Games",
     "description": "AI-driven web development...",
-    "url": "https://colgames.com",
+    "url": "https://colgames.it",
     "knowsAbout": [Web Development, AI Agents, Automation...]
   },
   "WebSite": {
-    "url": "https://colgames.com",
+    "url": "https://colgames.it",
     "name": "COL Games"
   }
 }
@@ -148,8 +148,8 @@
 
 ### 7. ✅ Canonical URLs
 
-- ✓ index.html: `https://colgames.com/`
-- ✓ portfolio.html: `https://colgames.com/portfolio.html`
+- ✓ index.html: `https://colgames.it/`
+- ✓ portfolio.html: `https://colgames.it/portfolio.html`
 - ✓ Previene duplicate content issues
 
 ---
@@ -197,7 +197,7 @@
 1. **Google Search Console Setup**
    ```
    1. Vai a: https://search.google.com/search-console
-   2. Add property: https://colgames.com/
+   2. Add property: https://colgames.it/
    3. Verifica ownership (DNS record o HTML file)
    4. Submit sitemap.xml
    5. Monitora impressions, clicks, average position
@@ -206,7 +206,7 @@
 2. **Bing Webmaster Tools**
    ```
    1. https://www.bing.com/webmasters
-   2. Add site: https://colgames.com/
+   2. Add site: https://colgames.it/
    3. Submit sitemap.xml
    ```
 
@@ -262,7 +262,7 @@
    ```bash
    # Esempio per portfolio.html con nuovi progetti
    <url>
-     <loc>https://colgames.com/portfolio.html</loc>
+     <loc>https://colgames.it/portfolio.html</loc>
      <lastmod>2026-04-20</lastmod>
      <changefreq>weekly</changefreq>
      <priority>0.9</priority>

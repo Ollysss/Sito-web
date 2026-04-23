@@ -20,4 +20,4 @@ Disallow: /node_modules/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://colgames.com/sitemap.xml
+Sitemap: https://colgames.it/sitemap.xml
